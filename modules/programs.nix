@@ -22,6 +22,9 @@
   overskride
   flameshot
   evolution
+  mullvad-vpn
+  mullvad-browser
+  mullvad-compass
   ];
 
 }
