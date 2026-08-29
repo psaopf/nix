@@ -33,16 +33,13 @@
     libxkbfile
   ];
 
-  ### PERIPHERALS / SERVICES ###
+  ### PACKAGES ###
 
+  #PERIPHERALS
   hardware.openrazer.enable = true;
 
-  # services.mullvad-vpn.enable already pulls in the mullvad package;
-  # listing mullvad-vpn in systemPackages too caused the version-collision
-  # warnings seen in the build output (mullvad-2026.2 vs mullvad-vpn-2026.3).
+  #MullVad
   services.mullvad-vpn.enable = true;
-
-  ### PACKAGES ###
 
   environment.systemPackages = with pkgs; [
     # terminal
@@ -64,6 +61,7 @@
     # internet
     # ungoogled-chromium is now managed by home-manager (see home.nix)
     qbittorrent
+    mullvad-vpn
 
     # misc
     vlc

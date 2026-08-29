@@ -19,8 +19,12 @@
   };
 
   # Coolbits 12 = fan control (4) + overclocking (8)
+  # RegistryDwords forces the GPU to stay at max performance state (P0)
+  # instead of dynamically stepping clocks up/down mid-game, which is a
+  # common source of stutter/lag on NVIDIA + Linux.
   services.xserver.screenSection = ''
     Option "Coolbits" "12"
+    Option "RegistryDwords" "PowerMizerEnable=0x1; PerfLevelSrc=0x2222; PowerMizerLevel=0x3; PowerMizerDefault=0x3; PowerMizerDefaultAC=0x3"
   '';
 
   programs.gamemode.enable = true;

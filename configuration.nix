@@ -17,6 +17,7 @@
       ./modules/packages.nix
       ./modules/shell.nix
       ./modules/home.nix
+      ./modules/nix.nix
       <home-manager/nixos>
     ];
 

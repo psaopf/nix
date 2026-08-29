@@ -8,6 +8,12 @@
   boot.loader.timeout = 0;
   boot.loader.systemd-boot.configurationLimit = 5;
 
+  # Early KMS: load NVIDIA modules in initrd so plymouth splash hands off
+  # cleanly instead of flickering/falling back to a generic framebuffer
+  # resolution mid-boot. (hardware-configuration.nix sets this list to
+  # empty by default — this list is additive, not a conflict.)
+  boot.initrd.kernelModules = [ "nvidia" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
+
   boot.kernelParams = [
     "quiet"
     "splash"
