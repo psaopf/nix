@@ -15,8 +15,7 @@
 
   ### LOGIN SCREEN ###
 
-  services.xserver.displayManager.lightdm.background = /home/p/Pictures/wallpaper.jpg;
-
+  services.xserver.displayManager.lightdm.background = ../wallpaper.jpg;
   ### PRINTING ###
 
   services.printing.enable = true;

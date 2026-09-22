@@ -4,6 +4,7 @@
 
   boot.initrd.systemd.enable = true;
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.graceful = true;  
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 0;
   boot.loader.systemd-boot.configurationLimit = 5;
@@ -38,6 +39,12 @@
     enable = true;
     memoryPercent = 50;
   };
+
+  fileSystems."/mnt/500GB" = {
+  device = "/dev/disk/by-uuid/D62C9A422C9A1D95";
+  fsType = "ntfs3";
+  options = [ "force" "uid=1000" "gid=100" "nofail" ];
+};
 
   services.fstrim.enable = true;
 }
