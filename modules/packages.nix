@@ -57,7 +57,6 @@
 
     # comms
     discord
-    evolution
 
     # dev
     python3
