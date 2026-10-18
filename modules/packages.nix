@@ -73,17 +73,28 @@
 
     # dev
     python3
+    ffmpeg
+
+    #Media
+    vlc
+    loupe
 
     # internet
     qbittorrent
     mullvad-vpn
+    firefox
 
-    # misc
-    vlc
-    flameshot
+    # Gaming
+    heroic
+    mangohud
     wineWow64Packages.stable  # wineWowPackages was deprecated upstream
     umu-launcher
+
+    #Tools
+    flameshot
+
+    # Office
     libreoffice-qt-fresh
-    heroic
+
   ];
 }
