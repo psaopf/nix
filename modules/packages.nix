@@ -65,7 +65,6 @@
 
     #Media
     vlc
-    loupe
 
     # internet
     qbittorrent
