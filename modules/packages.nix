@@ -68,7 +68,6 @@
     # internet
     qbittorrent
     mullvad-vpn
-    firefox
 
     # Gaming
     heroic
