@@ -15,5 +15,4 @@
   #    ACTION=="add", SUBSYSTEM=="video4linux", ATTRS{idVendor}=="046d", ATTR{index}=="0", \
   #      RUN+="${pkgs.systemd}/bin/systemd-run --no-block ${cam} $devnode"
   #  '';
-  };
 }

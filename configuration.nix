@@ -18,6 +18,8 @@
       ./modules/shell.nix
       ./modules/home.nix
       ./modules/nix.nix
+      ./modules/webcam.nix
+      ./modules/nix_ld.nix
       <home-manager/nixos>
     ];
 
