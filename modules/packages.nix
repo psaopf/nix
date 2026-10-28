@@ -8,6 +8,9 @@
   #MullVad
   services.mullvad-vpn.enable = true;
 
+  #Dev
+  users.users.p.extraGroups = ["kvm" "adbusers" ];
+
   environment.systemPackages = with pkgs; [
     # terminal
     ghostty
@@ -26,6 +29,9 @@
     # dev
     python3
     ffmpeg
+    android-studio
+    android-tools
+    steam-run-free
 
     #Media
     vlc
